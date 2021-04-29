@@ -1,0 +1,119 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: rgb(204, 204, 204);
+    font-family: sans-serif;
+}
+
+.centered {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.Calculator {
+    background-color: white;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+  border-radius: 5px;
+    height: 400px;
+    width: 400px;
+}
+
+.screen{
+    margin: 10px 5px 0 5px;
+border: 1px solid white;
+height: 20%;
+background-color: rgba(0, 0, 0, 0.7);
+display: flex;
+align-items: flex-end;
+justify-content: space-around;
+flex-direction: column;
+padding: 20px;
+word-wrap: break-word;
+word-break: break-all;
+
+}
+
+.keyboard{
+    border: 1px solid white;
+    margin: 0 5px;
+    height: 75%;
+    padding: 0;
+}
+
+.key{
+    border: 1px solid white;
+    width: 25%;
+    font-size: 25px;
+    font-weight: 300;
+    font-family:sans-serif;
+    text-align: center;
+    padding-top:10px ;
+    cursor: pointer;
+}
+
+.span2{
+    width:50%;
+}
+
+
+.row{
+    display: flex;
+    height: 20%;
+}
+
+.arithematic{
+    background-color: gray;
+    opacity: 1;
+    transition: all .3s ease;
+
+}
+
+.arithematic:hover{
+opacity: 0.5;
+}
+
+.equals{
+    background-color: yellowgreen;
+    opacity: 1;
+    transition: all .3s ease;
+}
+
+.equals:hover{
+    opacity:0.5;
+}
+
+.number{
+    transition: all .3s ease;
+
+}
+
+.number:hover{
+    background-color: gray;
+    opacity: 0.7;
+}
+
+.previousOperand{
+    padding-top: 10px;
+    padding-right:20px ;
+    text-align: end;
+    font-size:20px;
+    color: white;
+    opacity: 0.5;
+}
+
+
+.currentOperand{
+    color: white;
+    padding-right:20px ;
+    text-align: end;
+    font-size:30px;
+}
